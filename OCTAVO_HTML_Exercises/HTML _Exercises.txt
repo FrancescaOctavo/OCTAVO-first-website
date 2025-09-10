@@ -1,0 +1,161 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Fran's Profile</title> 
+</head> 
+<body> 
+	Hello! Welcome to my profile. This would be a short summary to get to know me! 
+</body> 
+</html>
+
+<head> 
+	<title>All about Me</title> 
+</head>
+
+<h1>Francesca Socorro Octavo</h1>
+
+<h2>Introduction</h2>
+
+<p>Hi, I am Francesca, but you can call me Fran. I love making up stuff and creating my own stories.</p> 
+
+<p>I love drawing.<br>I also enjoy baking.</p> 
+
+<hr>
+
+<p>My name is <b>Francesca Socorro Octavo</b>.</p> 
+
+<p>I enjoy <i>reading</i> in my free time.</p> 
+
+<p>I am an <u>artist</u>.</p> 
+
+<p>My 3 favorite foods are:</p>
+<ol> 
+	<li>Pizza</li> 
+	<li>Fries</li> 
+	<li>Adobo</li> 
+</ol> 
+
+<p>I like:</p>
+<ul> 
+	<li>Drawing</li> 
+	<li>Playing</li> 
+	<li>Hanging out with my girlfriend</li> 
+</ul>
+
+<img src="C:\Users\Fran\OneDrive\Documents\Stuff\Art\doggo.jpg" alt="Dogs" width="200"><br>
+
+<a href="https://www.google.com">Visit Google</a><br>
+
+<a href="mailto:francescaoctavo@gmail.com">Contact me through my Email!</a><br>
+
+<table border="1"> 
+	<tr> 
+		<td>Name</td> 
+		<td>Age</td> 
+	</tr> 
+	tr> 
+		<td>Fran</td> 
+		<td>20</td> 
+	</tr> 
+	<tr>
+		<td>Aquila</td>
+		<td>15</td>
+</table><br>
+
+<form> 
+	Name: <input type="text" name="fullname"> 
+</form> 
+
+<form> 
+	Password: <input type="password" name="pwd"> 
+</form> 
+
+<form> 
+	<button type="submit">Submit</button> 
+</form> 
+
+<!-- Where is it? It's gone!! -->
+
+<form> 
+	<p>Gender:</p> 
+	<input type="radio" name="gender" value="male"> Male<br> 
+	<input type="radio" name="gender" value="female"> Female<br>
+	<input type="radio" name="gender" value="bisexual"> Bisexual<br>
+	<input type="radio" name="gender" value="lesbian"> Lesbian<br>
+	<input type="radio" name="gender" value="gay"> Gay<br>
+	<input type="radio" name="gender" value="others"> Others 
+</form> 
+
+<form> 
+	<p>Hobbies:</p> 
+	<input type="checkbox" name="hobby" value="reading"> Reading<br>
+	<input type="checkbox" name="hobby" value="baking"> Baking<br> 
+	<input type="checkbox" name="hobby" value="drawing"> Drawing<br>  
+	<input type="checkbox" name="hobby" value="sports"> Sports<br> 
+	<input type="checkbox" name="hobby" value="travel"> Travel 
+</form><br>
+
+<form> 
+	<label for="country">Select Country:</label> 
+	<select id="country"> 
+		<option>Philippines</option> 
+		<option>United Kingdom</option> 
+		<option>Australia</option> 
+		<option>Japan</option> 
+		<option>USA</option> 
+	</select> 
+</form><br>
+
+<form> 
+	<label for="comments">Comments:</label><br> 
+	<textarea id="comments" rows="4" cols="30"></textarea> 
+</form> 
+
+<head> 
+	<link rel="icon" type="image/png" href="C:\Users\Fran\OneDrive\Documents\Stuff\Art\logo.jpg"> 
+</head>
+
+<audio controls> 
+	<source src="C:\Users\Fran\OneDrive\Documents\Casual-ChappellRoan.mp3" type="audio/mpeg"> 
+</audio><br>
+
+<video width="320" height="240" controls> 
+	<source src="C:\Users\Fran\Videos\Screen Recordings\stardew.mp4" type="video/mp4"> 
+</video><br>
+
+<iframe src="https://www.google.com" width="600" 
+height="400"></iframe><br>
+
+<iframe width="560" height="315"  
+	src="https://www.youtube.com/embed/watch?v=tFF9kdsq-x8&list=LL&index=108"  
+	frameborder="0" allowfullscreen> 
+</iframe>
+
+<p>Water formula: H<sub>2</sub>O</p>
+
+<p>x<sup>2</sup></p>
+
+<p>This is <strong>real</strong>!</p> 
+
+<p>Please <em>read carefully</em>.</p>
+
+<p><small>© 2024-2025 Boniifran</small></p> 
+
+<blockquote> 
+	"Build your heart then your mind." 
+</blockquote> 
+
+<p>She said, <q>Hello, everyone!</q></p>
+
+<p><abbr title="World Wide Web">WWW</abbr> is an information system that enables content sharing over the Internet.</p>
+
+<address> 
+	Written by Francesca Socorro Octavo<br> 
+	Visit us at www.boniifran.com<br> 
+	Bicol, Philippines 
+</address> 
+
+<p>You are almost at the <mark>end</mark>, my friend.</p>
+
+<p>Task Progress:</p> 
+<progress value="100" max="100"></progress> 

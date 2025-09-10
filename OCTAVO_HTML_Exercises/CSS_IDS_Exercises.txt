@@ -1,0 +1,105 @@
+<!-- ID Selectors -->
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+
+<style>
+#main-title { 
+	color: green; 
+	font-size: 30px; 
+}
+
+#intro-text { 
+	font-style: italic; 
+}
+
+#student-table { 
+	border-collapse: collapse; 
+}
+
+#profile-pic { 
+	border-radius: 50%; 
+}
+
+#submit-btn { 
+	background-color: orange; 
+	padding: 10px; 
+}
+
+#container { 
+	margin: 20px; 
+	padding: 20px; 
+	background-color: #eee; 
+}
+
+#email-field { 
+	border: 1px solid red; 
+}
+
+#home-link { 
+	color: purple; 
+} 
+
+#login-form { 
+	background: #f9f9f9; 
+	padding: 15px; 
+} 
+
+#footer-text { 
+	text-align: right; 
+}
+</style>
+
+<h1 id="maintitle">Hello, again</h1>
+
+<p id="intro-text">Here is another exercise that I'm about to do</p>
+
+<table id="student-table" border="1">
+	<tr> 
+		<td>Name</td> 
+		<td>Age</td> 
+	</tr> 
+	<tr> 
+		<td>Fran</td> 
+		<td>20</td> 
+	</tr> 
+	<tr>
+		<td>Aquila</td>
+		<td>15</td>
+</table>
+
+<img id="profile-pic" src="C:\Users\Fran\OneDrive\Documents\Stuff\Art\doggo.jpg" alt="Dogs" width="200"><br>
+
+
+<form> 
+	<button id="submit-btn" type="submit">Submit</button> 
+</form> 
+
+<div id="container">
+    <div class="row">
+        <div class="col-4"> 
+            <h3>What the hell What the hell What the hell What the hell What the hell What the hell What the hell What the hell What the hell </h3></div>
+        <div class="col-4">
+            <h4>Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh </h4></div>
+        <div class="col-4">
+            <h5>Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh Oh my gosh </h5></div>
+    </div><br>
+
+<form> 
+	<p>Hobbies:</p> 
+	<input id="email-field" type="checkbox" name="hobby" value="reading"> Reading<br>
+	<input id="email-field" type="checkbox" name="hobby" value="baking"> Baking<br> 
+	<input id="email-field" type="checkbox" name="hobby" value="drawing"> Drawing<br>  
+	<input id="email-field" type="checkbox" name="hobby" value="sports"> Sports<br> 
+	<input id="email-field" type="checkbox" name="hobby" value="travel"> Travel 
+</form><br>
+
+<a id="home-link" href="https://www.google.com">Visit Google</a>
+
+<form id="login-form"> 
+	Name: <input type="text" name="fullname"> 
+</form> 
+
+<form id="login-form"> 
+	Password: <input type="password" name="pwd"> 
+</form>
+
+<h2 id="footer-text">Fran's Profile</h2> 
