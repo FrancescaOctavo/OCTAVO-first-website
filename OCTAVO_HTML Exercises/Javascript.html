@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Exercises</title>
+  <style>
+    .highlight {
+      background-color: rgb(255, 96, 194);
+      font-weight: bold;
+    }
+    #box, #panel {
+      width: 200px;
+      height: 100px;
+      background-color: rgb(30, 79, 89);
+      margin: 10px 0;
+      transition: all 1s ease;
+      overflow: hidden;
+    }
+    #panel {
+      max-height: 200px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>JavaScript Exercises</h2>
+
+<!-- Exercise Elements -->
+<p id="demo">This is a paragraph.</p>
+<div id="box">Box</div>
+<div id="panel">Panel content goes here.</div>
+<img id="myImg" src="https://via.placeholder.com/150" alt="Image">
+<input type="text" id="name" placeholder="Enter your name">
+<br><br>
+
+<!-- Buttons to trigger actions -->
+<button id="btn1">Change Text</button>
+<button id="btn2">Change Background Color</button>
+<button id="btn3">Hide Element</button>
+<button id="btn4">Show Element</button>
+<button id="btn5">Toggle Visibility</button><br>
+<button id="btn6">Add Class</button>
+<button id="btn7">Remove Class</button>
+<button id="btn8">Toggle Class</button>
+<button id="btn9">Change Image</button>
+<button id="btn10">Get Input Value</button><br>
+<button id="btn11">Set Input Value</button>
+<button id="btn12">Append Content</button>
+<button id="btn13">Prepend Content</button>
+<button id="btn14">Fade Out</button>
+<button id="btn15">Fade In</button><br>
+<button id="btn16">Slide Up</button>
+<button id="btn17">Slide Down</button>
+<button id="btn18">Change Multiple CSS</button>
+<button id="btn20">Click to Change Text</button><br>
+
+<script>
+  // Exercise 1: Change text
+  document.getElementById("btn1").onclick = function() {
+    document.getElementById("demo").innerText = "Javarice!";
+  };
+
+  // Exercise 2: Change background color
+  document.getElementById("btn2").onclick = function() {
+    document.getElementById("box").style.backgroundColor = "lightblue";
+  };
+
+  // Exercise 3: Hide an element
+  document.getElementById("btn3").onclick = function() {
+    document.getElementById("demo").style.display = "none";
+  };
+
+  // Exercise 4: Show an element
+  document.getElementById("btn4").onclick = function() {
+    document.getElementById("demo").style.display = "block";
+  };
+
+  // Exercise 5: Toggle visibility
+  document.getElementById("btn5").onclick = function() {
+    let el = document.getElementById("demo");
+    el.style.display = (el.style.display === "none") ? "block" : "none";
+  };
+
+  // Exercise 6: Add class
+  document.getElementById("btn6").onclick = function() {
+    document.getElementById("demo").classList.add("highlight");
+  };
+
+  // Exercise 7: Remove class
+  document.getElementById("btn7").onclick = function() {
+    document.getElementById("demo").classList.remove("highlight");
+  };
+
+  // Exercise 8: Toggle class
+  document.getElementById("btn8").onclick = function() {
+    document.getElementById("demo").classList.toggle("highlight");
+  };
+
+  // Exercise 9: Change image source
+  document.getElementById("btn9").onclick = function() {
+    document.getElementById("myImg").src = "https://via.placeholder.com/150/0000FF/FFFFFF";
+  };
+
+  // Exercise 10: Get input value
+  document.getElementById("btn10").onclick = function() {
+    let val = document.getElementById("name").value;
+    console.log("Input value:", val);
+    alert("You typed: " + val);
+  };
+
+  // Exercise 11: Set input value
+  document.getElementById("btn11").onclick = function() {
+    document.getElementById("name").value = "Fran";
+  };
+
+  // Exercise 12: Append content
+  document.getElementById("btn12").onclick = function() {
+    document.getElementById("demo").innerHTML += " Nice!";
+  };
+
+  // Exercise 13: Prepend content
+  document.getElementById("btn13").onclick = function() {
+    let el = document.getElementById("demo");
+    el.innerHTML = "Hey " + el.innerHTML;
+  };
+
+  // Exercise 14: Fade out element
+  document.getElementById("btn14").onclick = function() {
+    let box = document.getElementById("box");
+    box.style.transition = "opacity 1s";
+    box.style.opacity = 0;
+  };
+
+  // Exercise 15: Fade in element
+  document.getElementById("btn15").onclick = function() {
+    let box = document.getElementById("box");
+    box.style.transition = "opacity 1s";
+    box.style.opacity = 1;
+  };
+
+  // Exercise 16: Slide up (simulate by setting max-height to 0)
+  document.getElementById("btn16").onclick = function() {
+    document.getElementById("panel").style.maxHeight = "0px";
+  };
+
+  // Exercise 17: Slide down (simulate by setting max-height)
+  document.getElementById("btn17").onclick = function() {
+    document.getElementById("panel").style.maxHeight = "200px";
+  };
+
+  // Exercise 18: Change multiple CSS properties
+  document.getElementById("btn18").onclick = function() {
+    let el = document.getElementById("demo");
+    el.style.color = "white";
+    el.style.backgroundColor = "black";
+  };
+
+  // Exercise 19: Mouseover event
+  document.getElementById("demo").onmouseover = function() {
+    this.style.color = "red";
+  };
+
+  // Exercise 20: Click to change text
+  document.getElementById("btn20").onclick = function() {
+    document.getElementById("demo").innerText = "You clicked me!";
+  };
+</script>
+
+</body>
+</html>
