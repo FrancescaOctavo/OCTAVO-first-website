@@ -1,0 +1,206 @@
+// Exercise 1
+<form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <button type="submit">Login</button>
+</form>
+
+// Exercise 2
+<form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+</form>
+
+// Exercise 3
+<p>Choose your role:</p>
+<input type="radio" id="student" name="role" value="student">
+<label for="student">Student</label>
+<input type="radio" id="teacher" name="role" value="teacher">
+<label for="teacher">Teacher</label>
+
+<p>Select your interests:</p>
+<input type="checkbox" id="html" name="interest" value="HTML">
+<label for="html">HTML</label>
+<input type="checkbox" id="css" name="interest" value="CSS">
+<label for="css">CSS</label>
+
+<br>//Exercise 4
+<label for="country">Country:</label>
+<select id="country" name="country">
+    <option value="ph">Philippines</option>
+    <option value="us">United States</option>
+    <option value="jp">Japan</option>
+</select>
+
+<br>// Exercise 5<br>
+<label for="message">Your Message:</label><br>
+<textarea id="message" name="message" rows="4" cols="40"></textarea>
+
+<br>// Exercise 6<br>
+<input type="text" name="username" required minlength="3" maxlength="10">
+<input type="email" name="email" required>
+
+<br>// Exercise 7
+<form id="loginForm">
+    <input type="text" id="username" required>
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit" , function(event) {
+        event.preventDefault();
+        alert("Form submitted!");
+    });
+</script>
+
+// Exercise 8
+<textarea id="bio" maxlength="100"></textarea>
+<p id="count">0/100</p>
+
+<script>
+    const bio = document.getElementById("bio");
+    const count = document.getElementById("count");
+
+    bio.addEventListener("input" , function() {
+        count.textContent = bio.value.length + "/100";
+    });
+</script>
+
+// Exercise 9
+<input type="password" id="pwd">
+<button type="button" onclick="togglePwd()">Show/Hide</button>
+
+<script>
+    function togglePwd() {
+        const pwd = document.getElementById("pwd");
+        pwd.type = pwd.type === "password" ? "text" : "password";
+    }
+</script>
+
+<br>// Exercise 10
+<form id="myForm">
+    <input type="text" required>
+    <button type="submit">Submit</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $("#myForm").submit(function(event){
+        event.preventDefault();
+        alert("Form submitted with jQuery!");
+    });
+</script>
+
+// Exercise 11
+<input type="password" id="pwd">
+<button id="toggle">Show/Hide</button>
+
+<script>
+    $("#toggle").click(function(){
+        let pwd = $("#pwd");
+        pwd.attr("type" , pwd.attr("type") === "password" ? "text" : "password");
+    });
+</script>
+
+<br>// Exercise 12<br>
+<textarea id="bio" maxlength="100"></textarea>
+<p id="count">0/100</p>
+
+<script>
+    $("#bio").on("input" , function(){
+        $("count").text($(this).val().length + "/100");
+    });
+</script>
+
+// Exercise 13
+<form id="login">
+    <input type="text" id="user" placeholder="Username"><br>
+    <input type="password" id="pass" placeholder="Password"><br>
+    <button type="submit">Login</button>
+</form>
+
+<script>
+    $("#login").submit(function(e){
+        e.preventDefault();
+        if($("#user").val() === "". || $("#pass").val() === ""){
+            alert("Please fill in all fields");
+        } else {
+            alert("Login successful!");
+        }
+    });
+</script>
+
+// Exercise 14
+<style>
+    .error { border: 2px solid red; }
+</style>
+
+<form id="formCheck">
+    <input type="text" id="name" placeholder="Name">
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    $("#formCheck").submit(function(e){
+        e.preventDefault();
+        if($("#name").val() === ""){
+            $("#name").addClass("error");
+        } else {
+            $("#name").removeClass("error");
+            alert("Form submitted!");
+        }
+    });
+</script>
+
+// Exercise 15
+<form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required minlength="3" maxlength="10"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    <label for="password">Confirm password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" required><br>
+
+    <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+
+<p>Select your interests:</p>
+        <input type="checkbox" id="drawing" name="interest" value="Drawing">
+        <label for="drawing">Drawing</label>
+        <input type="checkbox" id="singing" name="interest" value="Singing">
+        <label for="singing">Singing</label>
+        <input type="checkbox" id="dancing" name="interest" value="Dancing">
+        <label for="dancing">Dancing</label>
+        <input type="checkbox" id="baking" name="interest" value="Baking">
+        <label for="baking">Baking</label>
+        <input type="checkbox" id="cooking" name="interest" value="Cooking">
+        <label for="cooking">Cooking</label><br><br>
+
+<label for="bioForm">Add bio:</label><br>
+<textarea id="bioForm" maxlength="100"></textarea>
+<p id="countForm">0/100</p>
+
+<script>
+    const bioForm = document.getElementById("bioForm");
+    const countForm = document.getElementById("countForm");
+
+    bioForm.addEventListener("input" , function() {
+        countForm.textContent = bioForm.value.length + "/100";
+    });
+</script>
+
+    <button type="submit">Submit</button>
+</form>
