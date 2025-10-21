@@ -1,0 +1,170 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo Black';
+}
+
+:root {
+    --header-height: 10%; /* for mobile use */
+
+    /* Colors */
+     --primary-color: #09E784;
+     --secondary-color: #01C8DC;
+     --tertiary-color: #20DFDA;
+     --black-color: #000000;
+     --green-color: #1ED7B5;
+
+    /* Font size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+    --font-size-3xl: 2.5rem;
+
+    /* Font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Site max width */
+    --site-max-width: 1300px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Stylings for whole site */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img {
+    width: 100%;
+}
+
+.section-content {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+
+/* Navbar styling */
+.logo-container {
+    display: flex;
+    gap: 10px;
+}
+
+.logo {
+    width: 70px;
+    height: 55px;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-image: linear-gradient(to right, #09E784 , #01C8DC, #20DFDA);
+}
+
+header .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text {
+    margin-top: 8px;
+    color: var(--black-color);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Search bar styling */
+.nav-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    max-width: 550px;
+    margin: 0 30px;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 38px;
+}
+
+/* Input styling */
+.nav-search input {
+    flex: 1;
+    border: none;
+    padding: 6px 15px;
+    outline: none;
+    font-size: 1rem;
+    height: 100%;
+}
+
+/* Search button styling */
+.nav-search button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    height: 100%;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+.nav-search button i {
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    transition: 0.3s ease;
+}
+
+.nav-search button i:hover {
+    color: var(--primary-color);
+}
+
+/* Icons styling */
+.navbar .nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.navbar .nav-menu .material-icons{
+    padding: 10px 2px;
+    color: var(--white-color);
+    font-size: var(--font-size-xl);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar .nav-menu .material-icons:hover {
+    color: white;
+}
+
+.navbar .nav-menu .acc:hover {
+    color: black !important;
+}
